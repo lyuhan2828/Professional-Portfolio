@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-box;
+  box-sizing: content-box;
   padding: 0;
   margin: 0;
 }
@@ -63,11 +63,18 @@ section {
   width: 50%;
 }
 
-.box {
-  width: 100px;
-  height: 100px;
+.float-left {
+  float: left;
+  margin-right: 25px;
 }
 
-.container {
+.float-right {
+  float: right;
+  margin-left: 25px;
+}
+
+.div container {
   display: flex;
+  border-color: rgb(118, 197, 73);
+  background-color: lightcyan;
 }
