@@ -48,5 +48,26 @@ header nav ul li a {
 }
 
 section {
-  padding: 60px;
+  padding: 400px;
+  text-align: left;
+}
+
+.section-title {
+  font-size: 55px;
+  color: rgb(77, 73, 73);
+  border-right: 3px solid;
+  padding-right: 200px;
+  text-align: left;
+  position: relative;
+  margin: 0 auto 35px auto;
+  width: 50%;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.container {
+  display: flex;
 }
