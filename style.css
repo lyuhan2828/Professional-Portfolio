@@ -53,14 +53,25 @@ section {
   justify-content: start;
 }
 
-.float-left {
-  float: left;
-  padding-left: 30px;
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+.column {
+  flex: 33.33%;
+  padding: 5px;
 }
 
-#work {
-  float: left;
+.img {
+  display: block;
+  flex-wrap: wrap;
+  float: right;
 }
+
+/* .flex-row { */
+/* float: left; */
+/* padding-left: 30px; */
+/* } */
 
 .section-title {
   font-size: 55px;
@@ -70,9 +81,6 @@ section {
   text-align: left;
   position: relative;
   width: 50%;
-}
-
-#title-work {
 }
 
 img {
@@ -101,8 +109,9 @@ h5 {
   /* background-color: #000000; */
 }
 
-.container {
+article ul li {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: right;
 }
