@@ -7,6 +7,12 @@ body {
   background-color: rgb(246, 251, 252);
   font-family: Arial, Helvetica, sans-serif;
 }
+.avatar {
+  image-orientation: left;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
 
 header {
   padding: 200px;
@@ -64,8 +70,13 @@ section p {
   width: 50%;
 }
 
-.Projects {
-  justify-content: left;
+section img {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Projects img {
+  justify-content: right;
   align-items: flex-end;
 }
 
@@ -73,24 +84,24 @@ div h5 {
   margin-top: -4px;
 }
 
-.cotainer {
-  margin-right: 20px;
-  padding: 20px;
-  clear: both;
-  float: right;
-  width: 20%;
-  height: 100%;
-}
-/* Create two equal columns that sits next to each other */
+/* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
-  flex: 50%;
-  padding: 0 4px;
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .img {
   display: block;
   flex-wrap: wrap;
-  float: right;
+  float: left;
 }
 
 img {
@@ -98,15 +109,17 @@ img {
   height: 200px;
 }
 
-.box1 {
+.box1 img {
   display: block;
-  margin: 10px auto;
+  justify-content: center;
+  align-items: center;
   max-width: 150px;
 }
 
 .box2 {
   display: block;
-  margin: 10px auto;
+  justify-content: center;
+  align-items: center;
   max-width: 150px;
 }
 .box3 {
