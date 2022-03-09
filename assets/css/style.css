@@ -6,6 +6,8 @@
 body {
   background-color: rgb(246, 251, 252);
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 .avatar {
   image-orientation: left;
@@ -15,13 +17,13 @@ body {
 }
 
 header {
-  padding: 200px;
+  padding: 150px;
   background-color: rgb(246, 251, 252);
   color: cadetblue;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-image: url("chess.jpeg");
+  background-image: url("../images/chess.jpeg");
 }
 
 header h1 {
@@ -49,17 +51,31 @@ header nav ul {
 }
 
 header nav ul li a {
-  margin: 0 30px;
+  padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
 }
 
+.hero {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: grey;
+}
+#contents {
+  display: flex;
+  flex-direction: row;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
 section p {
   padding: 50px;
   justify-content: right;
   margin: auto;
 }
-
 .section-title {
   font-size: 55px;
   color: rgb(77, 73, 73);
@@ -69,74 +85,30 @@ section p {
   position: relative;
   width: 50%;
 }
-
 section img {
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: flex;
 }
-
-.Projects img {
-  justify-content: right;
-  align-items: flex-end;
-}
-
 div h5 {
   margin-top: -4px;
 }
-
-/* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-  float: left;
-  width: 25%;
-  padding: 5px;
+aside {
+  display: flex;
+  flex-direction: column;
 }
-
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.img {
-  display: block;
-  flex-wrap: wrap;
-  float: left;
-}
-
 img {
   width: 200px;
   height: 200px;
 }
 
-.box1 img {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  max-width: 150px;
+.row img {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
-.box2 {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  max-width: 150px;
+.row img:hover {
+  opacity: 1;
 }
-.box3 {
-  display: block;
-  margin: 10px auto;
-  max-width: 150px;
-}
-.box4 {
-  display: block;
-  margin: 10px auto;
-  max-width: 150px;
-}
-.box5 {
-  display: block;
-  margin: 10px auto;
-  max-width: 150px;
-}
+
 h5 {
   margin-top: -10px;
 }
