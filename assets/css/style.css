@@ -17,13 +17,14 @@ body {
 }
 
 header {
-  padding: 150px;
-  background-color: rgb(246, 251, 252);
-  color: cadetblue;
+  padding: 100px;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  background-image: url("../images/chess.jpeg");
+  /* flex-wrap: wrap; */
+  background-image: url("../images/background.jpg");
+  background-size: 100%;
 }
 
 header h1 {
@@ -58,46 +59,85 @@ header nav ul li a {
 
 .hero {
   display: flex;
-  justify-content: center;
+  justify-content: right;
   flex-wrap: wrap;
-  color: grey;
-}
-#contents {
-  display: flex;
-  flex-direction: row;
-}
+  color: rgb(110, 243, 110);
+} 
 
 main {
   display: flex;
   flex-direction: column;
-}
-section p {
+} 
+
+ section p {
   padding: 50px;
   justify-content: right;
   margin: auto;
-}
-.section-title {
-  font-size: 55px;
-  color: rgb(77, 73, 73);
+} 
+
+ .section-title {
+  font-size: 30px;
+  color: rgb(37, 82, 228);
   border-right: 3px solid;
-  padding-right: 300px;
+  padding-right: 200px;
   text-align: left;
   position: relative;
-  width: 50%;
+  width: 25%;
 }
-section img {
-  display: flex;
+
+/* div.projects {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 100px;
 }
+
+div.projects:hover {
+  border: 1px solid #777;
+} */
+
+div .projects img {
+  width: 200px;
+  height: 200px;
+}
+
+/* .row {
+  padding:200px;
+  margin:350px;
+  flex-wrap: wrap;
+  justify-content: right;
+} */
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
 div h5 {
   margin-top: -4px;
 }
 aside {
   display: flex;
   flex-direction: column;
-}
-img {
-  width: 200px;
-  height: 200px;
 }
 
 .row img {
@@ -116,6 +156,18 @@ h5 {
 article ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: right;
+}
+
+article ul li a{
+  color: rgb(246, 251, 252);
+}
+
+footer {
+  text-align: center;
+  border: solid;
+  padding: 20px;
+  background-image: url("../images/background.jpg");
+  background-size: 100%;
 }
