@@ -1,7 +1,9 @@
+<!-- declare the document type-->
 <!DOCTYPE html>
 <html lang="en-us">
 
 <head>
+  <!-- meta element give extra associate data to html doc, when open this file all text in the page use utf-8 coding system, uft-8 use international symbols-->
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="./assets/css/style.css" />
   <title>Professional Portfolio</title>
@@ -9,90 +11,79 @@
 
 <body>
   <header>
-    <img src="./assets/images/Anna Liang.jpg" alt="Avatar" class="avatar">
-    <h1>
-      <a href="/">Anna Liang</a>
-    </h1>
+    <table>
+    <!-- alt is alternative text-->
+    <tr>
+      <td><img src="./assets/images/Anna Liang.jpg" alt="Anna profile picture" class="avatar"></td>
+    </tr>
+    <td>
+      <h1>👍Anna Liang</h1>
     <nav>
-      <ul>
+      <!--<a> is a html element for anchor tag, href is a html attribute-->
+      <!--href is hyperlink where you can click to the destination you want to go to-->
+      
         <li>
           <a href="#about-me">About Me</a>
         </li>
         <li>
-          <a href="#work">Projects</a>
+          <a href="#education">Education</a>
         </li>
         <li>
-          <a href="#resume">Resume</a>
+          <a href="projects.html">Projects</a>
         </li>
         <li>
           <a href="#contact-me">Contact Me</a>
         </li>
-      </ul>
+      
+    </td>
     </nav>
+  </table>
   </header>
-  <section class="hero">
-    <h2>Beginner's Mind</h2>
-    </section>
-  </section>
-  <div id='contents'>
-  <main>
-    <section id="about-me">
-      <h2 class="section-title primary-border">About Me</h2>
-      <p>Hello! Welcome to my page! Feel free to explore around.<span class="note"></span></p>
-    </section>
-    <section id="work">
-      <h2 class="section-title primary-border" id="title-work">Projects</h2>
-      <p>Some projects</p>
-    
-        <div class="container">
-          <div class="row">
-        <div class="projects">
-          <a target="_blank" href="https://lyuhan2828.github.io/runbuddy/">
-            <img src="./assets/images/hero-bg.jpg" alt="runbuddy" onclick="myFunction(this);">
-          </a>
-          <h5 class="desc">Run Buddy</h5>
-
-          
-            <div class="projects">
-              <a target="_blank" href="https://teamgta.github.io/GetawayfromGTA/">
-                <img src="./assets/images/Project 1.png" alt="project-1" onclick="myFunction(this);">
-              </a>
-              <h5 class="desc">Project 1</h5>
-
-              <div class="projects">
-                <a target="_blank" href="https://salty-brushlands-53741.herokuapp.com/">
-                  <img src="./assets/images/LEDlight.jpg" alt="LED" onclick="myFunction(this);">
-                </a>
-                <h5 class="desc">Project 2
-                </h5>
-
-                <div class="projects">
-                  <a target="_blank" href="">
-                    <img src="./assets/images/surf report.jpg" alt="surfing" onclick="myFunction(this);">
-                  </a>
-                  <h5 class="desc">Surf Report</h5>
-
-                  <div class="projects">
-                    <a target="_blank" href="">
-                      <img src="./assets/images/calculator.jpg" alt="calculator" onclick="myFunction(this);">
-                    </a>
-                    <h5 class="desc">Calculator</h5>
-                  </div>
-        </div>
-    
   
-  </div>
+  <div>
+  <main>
+    <section>
+      <h3>About Me</h3>
+      <p><em>Hello! Welcome to my page! Feel free to explore around.</em><span class="note"></span></p>
+      <p>A passionate web developer seeking for opportunity to extend my acquired skills and abilities while contributing to the company's success.</p>
     </section>
-    <section id="resume">
-      <h2 class="section-title primary-border">Resume</h2>
-      <p>Experience</p>
-    </section>
-    <section id="contact-me">
-      <h2 class="section-title primary-border">Contact Me</h2>
+    <hr>
+    <h3>Education</h3>
+    <p><strong>Canadian Tourism College:</strong></p>
+    <ul>
+      <table><li>Hospitality & Resort Business Management</li><td>August 2013 - August 2015</td></table>
+    </ul>
+    <p><strong>University of Toronto School of Continuing Studies:</strong></p>
+    <ul>
+      <table><li>Full-Stack Flex BootCamp</li><td>Feb 2022 - Aug 2022</td></table>
+    </ul>
+    <hr>
+    <h3>Skills</h3>
+    <!-- emoji win+;-->
+    <table cellspacing="10">
+      <tr>
+        <td>HTML⭐⭐⭐⭐⭐</td><td>CSS⭐⭐⭐⭐</td>
+      </tr>
+        <tr>
+        <td>JQuery⭐⭐⭐⭐⭐</td><td>JavaScript⭐⭐⭐</td>
+        </tr>
+        <tr>
+          <td>React⭐⭐⭐</td><td>Node.js⭐⭐⭐⭐</td>
+        </tr>
+        <tr>
+          <td>SQL⭐⭐⭐⭐</td><td>ORM⭐⭐⭐</td>
+        </tr>
+        <tr>
+          <td>MongoDB⭐⭐⭐</td><td>NoSQL⭐⭐⭐⭐</td>
+        </tr>
+      </tr>
+    </table>
+    <hr>
+    <section>
+      <h3>Contact Me</h3>
       <p>Contact Information</p>
     </section>
   </main>
-  
 </div>
   <footer>
     <article>
@@ -103,10 +94,22 @@
         <li>
           <a href="https://github.com/lyuhan2828/ProfessionalPortfolio.git">GitHub</a>
         </li>
-        <li><a href="URL:Linkedin">Linkedin</a></li>
+        <li><a href="https://www.linkedin.com/in/anna-liang-bab92577/">Linkedin</a></li>
       </ul>
       </p>
     </article>
+    <hr>
+    <form action="mailto:yuhan28283@gmail.com" method="post" enctype="text/plain">
+      <!-- checkout out input type from mdn-->
+        <label> Your Name:</label>
+        <input type="text" name="" value=""><br>
+        <label>Your Email:</label>
+        <input type="email" name="" value=""><br>
+        <label>Your Message:</label><br>
+        <!--rows determine how tall, and columns(cols) determin how wide the text field-->
+        <textarea name="yourMessage" rows="10" cols="30"></textarea><br>
+        <input type="submit" name="">
+    </form>
   </footer>
 </body>
 
